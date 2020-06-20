@@ -8,7 +8,7 @@ steps:
     # Deploy the container image to cloud run
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'gcloud'
-    args: ['run', 'deploy', 'helloworld', '--image', 'gcr.io/zingati-app/helloword', '--region', 'us-east1', '--platform', 'managed', '--allow-unauthenticated']
+    args: ['run', 'deploy', 'helloworld', '--image', 'gcr.io/zingati-app/helloworld', '--region', 'us-east1', '--platform', 'managed', '--allow-unauthenticated']
 # Redploy. Probably not a very good solution but this should work
 images:
   - gcr.io/zingati-app/helloworld
