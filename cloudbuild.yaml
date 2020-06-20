@@ -1,7 +1,7 @@
 steps:
   # build the container 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/zingati-app/helloworld']
+    args: ['build', '-t', 'gcr.io/zingati-app/helloworld', '.']
     # Push the image to container registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/zingati-app/helloworld']
